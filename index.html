@@ -139,7 +139,14 @@
   .live .x3 b{color:rgba(255,255,255,.45);font-weight:400;margin:0 .3rem}
   .live p{margin-top:.8rem;color:var(--grey);font-size:clamp(.85rem,3.5vw,1rem)}
   .video{margin-top:1.1rem;border-radius:16px;overflow:hidden;background:#000;border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 50px -20px rgba(0,0,0,.9)}
-  .video video{display:block;width:100%;max-height:78vh;background:#000}
+  .video{position:relative}
+  .video video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+  .video.playing video{aspect-ratio:480/848;object-fit:contain;max-height:78vh}
+  .video .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:78px;height:78px;border-radius:50%;border:0;cursor:pointer;background:#e74924;color:#fff;display:grid;place-items:center;
+    box-shadow:0 0 0 10px rgba(231,73,36,.25),0 16px 40px -10px rgba(0,0,0,.9);transition:transform .15s}
+  .video .play svg{width:38px;height:38px;margin-left:4px}
+  .video .play:hover{transform:translate(-50%,-50%) scale(1.06)}
+  .video.playing .play{display:none}
   .cta2 .h{font-weight:700;text-transform:uppercase;font-size:clamp(1.25rem,5.4vw,1.9rem);line-height:1.15;margin-bottom:.4rem}
   .cta2 .h em{font-style:normal;color:#ff9a5c}
   .cta2 .cta{text-decoration:none}
@@ -250,10 +257,11 @@
     <div class="blk testi" id="testimonio">
       <div class="eyebrow">Lo que dicen los roofers</div>
       <h2>Roofers confían en<br>Adjusting Experts</h2>
-      <div class="video">
-        <video controls playsinline preload="metadata" poster="assets/testimonio-poster.jpg?v=3">
-          <source src="assets/testimonio.mp4?v=3" type="video/mp4">
+      <div class="video" id="testiBox">
+        <video id="testiVid" controls playsinline preload="metadata" poster="assets/testimonio-poster.jpg?v=3">
+          <source src="assets/testimonio.mp4?v=4" type="video/mp4">
         </video>
+        <button class="play" type="button" id="testiPlay" aria-label="Reproducir testimonio"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></button>
       </div>
     </div>
 
@@ -317,6 +325,11 @@
   // GHL embed: cuando el iframe de GoHighLevel avisa que el formulario se envió, abrir el popup
   window.addEventListener('message',function(e){var d=e.data;try{if(typeof d==='string')d=JSON.parse(d)}catch(_){}
     var t=(d&&(d.type||d.event||d.name||''))+'';if(/submit/i.test(t)||(typeof e.data==='string'&&/form.*submit/i.test(e.data)))openChat()});
+
+  // ---- Testimonio: poster 16:9 (flyer), video vertical al reproducir ----
+  var tv=document.getElementById('testiVid'),tb=document.getElementById('testiBox');
+  document.getElementById('testiPlay').addEventListener('click',function(){tv.play()});
+  tv.addEventListener('play',function(){tb.classList.add('playing')});
 
   var form=document.getElementById('regForm'),btn=document.getElementById('submitBtn');
   form.addEventListener('submit',function(e){
