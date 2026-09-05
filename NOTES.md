@@ -17,3 +17,6 @@ Si cambia el flyer, re-cortar con los mismos rangos: top 0–1046, info 1232–1
 - Botón "RESERVA TU LUGAR" = réplica CSS del botón del flyer (#e74924, radio ~37% de la altura, glow naranja). Es el submit real.
 - Debajo del formulario: "Qué vas a vivir" (8 puntos), tarjeta "El Claim en Vivo", bloque de testimonio y segundo CTA.
 - VIDEO TESTIMONIO: guardar como `assets/testimonio.mp4` (H.264, con subtítulos quemados). El `<video>` ya apunta ahí; el poster es `assets/testimonio-poster.jpg`.
+
+## Live
+https://siberianvito.github.io/claim-to-close-georgia/ — repo github.com/siberianvito/claim-to-close-georgia (GitHub Pages, branch main). Para publicar cambios: `git add -A && git commit -m "..." && git push`.
