@@ -103,7 +103,11 @@
   .cupos span{margin:0 .45rem;font-weight:400;opacity:.8}
   .fine{margin-top:.5rem;text-align:center;font-size:.72rem;color:#aeb6c6;line-height:1.4}
 
-  /* success */
+  /* GHL embed */
+  .ghl{border-radius:16px;overflow:hidden;background:transparent;min-height:560px}
+  .ghl iframe{display:block;width:100%;min-height:560px}
+
+  /* success (legacy, unused with GHL) */
   .ok{display:none;text-align:center;padding:.6rem 0 .4rem}
   .ok.show{display:block}
   .reg.done form{display:none}
@@ -183,48 +187,12 @@
   <section class="reg" id="registro">
     <div class="reg-head"><p>Registro Gratuito - Menos De 60 Segundos</p></div>
 
-    <!-- ===== GHL: reemplazar este <form> por el embed de GoHighLevel. Mantener id="registro" en la sección. ===== -->
-    <form id="regForm" novalidate>
-      <div class="grid">
-        <div class="f"><label for="fn">Nombre</label><input id="fn" name="first_name" type="text" autocomplete="given-name" required placeholder="Tu nombre"></div>
-        <div class="f"><label for="ln">Apellido</label><input id="ln" name="last_name" type="text" autocomplete="family-name" required placeholder="Tu apellido"></div>
-        <div class="f full"><label for="co">Empresa</label><input id="co" name="company" type="text" autocomplete="organization" required placeholder="Tu compañía de roofing"></div>
-        <div class="f"><label for="ph">Teléfono</label><input id="ph" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(404) 000-0000"></div>
-        <div class="f"><label for="em">Correo</label><input id="em" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="tu@correo.com"></div>
-        <div class="f"><label for="ci">Ciudad</label><input id="ci" name="city" type="text" autocomplete="address-level2" required placeholder="Atlanta, Norcross…"></div>
-        <div class="f"><label for="ro">Rol / Posición</label>
-          <select id="ro" name="role" required>
-            <option value="" disabled selected>Seleccioná</option>
-            <option>Owner</option><option>Ventas</option><option>Project Manager</option><option>Estimator</option><option>Contractor</option><option>Otro</option>
-          </select></div>
-        <div class="f full"><label>¿Trabajás claims de seguro actualmente?</label>
-          <div class="yn">
-            <label><input type="radio" name="works_claims" value="Sí" required>Sí</label>
-            <label><input type="radio" name="works_claims" value="No">No</label>
-          </div></div>
-        <div class="f full"><label for="src">¿Cómo te enteraste? <i>(opcional)</i></label>
-          <select id="src" name="source">
-            <option value="" selected>Seleccioná</option>
-            <option>Instagram / Facebook</option><option>Roofing en Español</option><option>Un roofer me lo recomendó</option><option>Adjusting Experts</option><option>BRS Roofing Supply</option><option>Otro</option>
-          </select></div>
-      </div>
-      <button class="cta" type="submit" id="submitBtn">Reserva tu lugar</button>
-      <div class="cupos">Cupos limitados<span>|</span>Registro requerido</div>
-      <div class="fine">Al registrarte aceptás recibir la confirmación y recordatorios del evento por correo y SMS.</div>
-    </form>
-    <!-- ===== fin form ===== -->
-
-    <div class="ok" id="ok" role="status">
-      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5 9-10"/></svg></div>
-      <h3>¡Tu lugar está reservado!</h3>
-      <p>Te enviamos la confirmación por correo y SMS. Guardá la fecha:</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Sábado 26 de septiembre</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>A partir de las 10:00 AM</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>BRS Roofing Supply · Norcross, GA</li>
-      </ul>
-      <a class="wa" href="https://chat.whatsapp.com/GAdVaCzlGxv2zHhtBIMqgd" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 1.8a8.2 8.2 0 1 1-4.2 15.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 0 1 12 3.8zm-3 4.4c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.4 2.5 1 3 .8 3.5.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3l-2-1c-.3-.1-.5-.2-.7.1l-.9 1.1c-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.5-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.5L9.6 8.5c-.2-.4-.4-.4-.6-.4z"/></svg>Entrar al chat privado</a>
+    <!-- ===== GHL FORM ===== -->
+    <div class="ghl">
+      <iframe src="https://api.leadconnectorhq.com/widget/form/SNWO2G66H6dG0HVsnsZp" style="width:100%;height:100%;border:none;border-radius:3px" id="inline-SNWO2G66H6dG0HVsnsZp" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivate" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Claim to Close: Georgia" data-height="720" data-layout-iframe-id="inline-SNWO2G66H6dG0HVsnsZp" data-form-id="SNWO2G66H6dG0HVsnsZp" title="Claim to Close: Georgia — Registro"></iframe>
     </div>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    <div class="cupos">Cupos limitados<span>|</span>Registro requerido</div>
   </section>
 
   <!-- 4. INFO: qué vas a vivir · el claim en vivo · testimonio -->
@@ -331,17 +299,20 @@
   document.getElementById('testiPlay').addEventListener('click',function(){tv.play()});
   tv.addEventListener('play',function(){tb.classList.add('playing')});
 
-  var form=document.getElementById('regForm'),btn=document.getElementById('submitBtn');
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    if(!form.checkValidity()){form.reportValidity();return}
-    btn.disabled=true;btn.textContent='Reservando…';
-    var data=Object.fromEntries(new FormData(form).entries());
-    console.log('Registro:',data);
-    // TODO GHL: fetch('https://services.leadconnectorhq.com/hooks/…',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-    if(window.fbq){fbq('track','Lead',{content_name:'Claim to Close Georgia'})}
-    setTimeout(function(){reg.classList.add('done');document.getElementById('ok').classList.add('show');reg.scrollIntoView({behavior:'smooth',block:'start'});openChat()},600);
+  // ---- Abrir popup cuando GHL confirma el envío ----
+  var ghlOrigins=/leadconnectorhq\.com|msgsndr\.com|gohighlevel\.com/;
+  window.addEventListener('message',function(e){
+    if(!ghlOrigins.test(e.origin||''))return;
+    var raw='';try{raw=typeof e.data==='string'?e.data:JSON.stringify(e.data)}catch(_){}
+    if(/submit|submitted|success|thank/i.test(raw)&&!/set-sticky|resize|height/i.test(raw)){
+      if(window.fbq){fbq('track','Lead',{content_name:'Claim to Close Georgia'})}
+      setTimeout(openChat,400);
+    }
   });
+  // Fallback: si el formulario redirige a esta página con ?gracias=1 (o #gracias), abrir el popup
+  if(/[?&]gracias=1/.test(location.search)||location.hash==='#gracias'){
+    document.getElementById('registro').scrollIntoView({block:'start'});setTimeout(openChat,300);
+  }
 })();
 </script>
 </body>
