@@ -116,12 +116,12 @@ Nos vemos en Norcross.
 
 **SMS 1 — Ahora**
 ```
-{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close: Georgia. Sab 26 sep 10AM, Norcross. Gratis, cupos limitados. Reserva: claimtoclose.com
+{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close. Sab 26 sep 10AM, Norcross GA. Gratis, cupos limitados. claimtoclose.com
 ```
 
 **SMS 2 — 1 semana antes**
 ```
-{{contact.first_name}}, falta 1 semana para Claim to Close. Sab 26 sep 10AM, Norcross GA. El Claim en Vivo: roofer x PA x abogado. Quedan pocos cupos. Reserva: claimtoclose.com
+{{contact.first_name}}, falta 1 semana para Claim to Close. Sab 26 sep 10AM, Norcross GA. El Claim en Vivo: roofer x PA x abogado. Pocos cupos: claimtoclose.com
 ```
 
 **SMS 3 — 1 día antes**
@@ -131,7 +131,7 @@ Nos vemos en Norcross.
 
 Primer SMS de la cuenta debe incluir opt-out una vez (obligatorio A2P). Versión SMS 1 con opt-out:
 ```
-{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close. Sab 26 sep 10AM, Norcross. Gratis, cupos limitados. claimtoclose.com  STOP para salir
+{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close. Sab 26 sep 10AM, Norcross. Gratis, cupos limitados. claimtoclose.com STOP=salir
 ```
 
 ---
@@ -140,7 +140,7 @@ Primer SMS de la cuenta debe incluir opt-out una vez (obligatorio A2P). Versión
 
 **SMS confirmación (inmediato):**
 ```
-Listo {{contact.first_name}}! Tu lugar en Claim to Close esta reservado. Sab 26 sep 10AM, BRS Roofing Supply, Norcross. Entra al chat privado: chat.whatsapp.com/GAdVaCzlGxv2zHhtBIMqgd
+Listo {{contact.first_name}}! Tu lugar en Claim to Close esta reservado. Sab 26 sep 10AM, Norcross. Chat privado: chat.whatsapp.com/GAdVaCzlGxv2zHhtBIMqgd
 ```
 
 **SMS 1 semana antes:**
