@@ -18,6 +18,8 @@ Al registrarse → agregar tag `ctc-registrado` → salir de esta secuencia y en
 
 ## EMAIL 1 — Ahora (invitación)
 
+**Imagen de cabecera (poner arriba del texto):** https://claimtoclose.com/assets/invitacion.jpg  → link de la imagen a https://claimtoclose.com
+
 **Asunto:** {{contact.first_name}}, Adjusting Experts y Roofing en Español te invitan: Claim to Close · 26 de septiembre
 **Preheader:** Un día para dominar el juego de los reclamos. Cupos limitados. Sin costo.
 
@@ -55,17 +57,19 @@ Nos vemos en Atlanta,
 
 ## EMAIL 2 — 1 semana antes (sáb 19 sep)
 
+**Imagen de cabecera:** https://claimtoclose.com/assets/invitacion.jpg
+
 **Asunto:** Falta 1 semana: ¿ya reservaste tu lugar en Claim to Close?
 **Preheader:** 26 de septiembre · Norcross, GA · Quedan pocos cupos.
 
 {{contact.first_name}},
 
-En exactamente una semana estamos en Norcross con roofers de toda Georgia hablando de lo que nadie enseña: cómo se gana un claim de verdad.
+En exactamente una semana estamos en Norcross con roofers de toda Georgia hablando de lo que nadie enseña: cómo se gana un claim de verdad, paso a paso.
 
 Si todavía no reservaste, este es el momento. Los cupos se están llenando y el registro cierra cuando llegamos a capacidad.
 
 **El highlight del día: El Claim en Vivo.**
-Un roofer, un public adjuster y un abogado toman el mismo reclamo y lo destrozan en vivo: qué documentar, qué decir, qué NO decir, y dónde se pierde o se gana el dinero. Eso solo pasa una vez, y solo en Atlanta.
+Un roofer, un public adjuster y un abogado toman el mismo reclamo y lo analizan a fondo, en vivo: qué documentar, qué decir, qué no decir, y dónde se gana o se pierde el dinero. Eso solo pasa una vez, y solo en Atlanta.
 
 Además: estrategia de claims, documentación que aprueba, casos reales, networking y cómo trabajar claims junto a Adjusting Experts.
 
@@ -83,14 +87,16 @@ Traé tu caso. Salí con respuestas.
 
 ## EMAIL 3 — 1 día antes (vie 25 sep)
 
+**Imagen de cabecera:** https://claimtoclose.com/assets/invitacion.jpg
+
 **Asunto:** Mañana. Últimos cupos para Claim to Close: Georgia
 **Preheader:** Sábado 10:00 AM · Norcross, GA · Reservá hoy o te lo perdés.
 
 {{contact.first_name}},
 
-Mañana a las 10:00 AM arranca Claim to Close: Georgia y todavía tenés chance de estar en la sala.
+Mañana a las 10:00 AM arranca Claim to Close: Georgia y todavía podés estar en la sala.
 
-Es la última llamada. Los cupos que quedan se van hoy.
+Es el último llamado: los cupos que quedan se terminan hoy.
 
 **Lo que te llevás mañana:**
 ✓ El sistema de claims de Adjusting Experts, de la inspección al cierre
@@ -112,26 +118,28 @@ Nos vemos en Norcross.
 
 ---
 
-## SMS (3 segmentos, ≤ 160 caracteres cada uno, sin emojis para deliverability)
+## SMS — invitación (3 mensajes)
+
+Nota: con acentos y ñ el celular manda cada texto en 2–3 segmentos (así se ve bien el español). Si preferís 1 solo segmento por texto, avisame y hago la versión corta sin acentos.
 
 **SMS 1 — Ahora**
 ```
-{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close. Sab 26 sep 10AM, Norcross GA. Gratis, cupos limitados. claimtoclose.com
+Hola {{contact.first_name}}, Adjusting Experts y Roofing en Español te invitan a Claim to Close: Georgia. Sábado 26 de septiembre, 10:00 AM, en Norcross. Es gratis y los cupos son limitados. Reservá tu lugar: claimtoclose.com
 ```
 
 **SMS 2 — 1 semana antes**
 ```
-{{contact.first_name}}, falta 1 semana para Claim to Close. Sab 26 sep 10AM, Norcross GA. El Claim en Vivo: roofer x PA x abogado. Pocos cupos: claimtoclose.com
+{{contact.first_name}}, falta una semana para Claim to Close: Georgia. Sábado 26, 10:00 AM, en Norcross. Vas a ver un claim real analizado en vivo por un roofer, un public adjuster y un abogado. Quedan pocos cupos: claimtoclose.com
 ```
 
 **SMS 3 — 1 día antes**
 ```
-{{contact.first_name}}, es manana! Claim to Close: Georgia, 10AM, BRS Roofing Supply, 2830 Simpson Cir NW, Norcross. Ultimos cupos, reserva hoy: claimtoclose.com
+{{contact.first_name}}, ¡es mañana! Claim to Close: Georgia, sábado 10:00 AM en BRS Roofing Supply, 2830 Simpson Cir NW, Norcross. Últimos cupos. Reservá hoy: claimtoclose.com
 ```
 
-Primer SMS de la cuenta debe incluir opt-out una vez (obligatorio A2P). Versión SMS 1 con opt-out:
+Primer SMS que le mandás a un número nuevo debe incluir la salida (A2P). Versión de SMS 1 con opt-out:
 ```
-{{contact.first_name}}, Adjusting Experts y Roofing en Espanol te invitan a Claim to Close. Sab 26 sep 10AM, Norcross. Gratis, cupos limitados. claimtoclose.com STOP=salir
+Hola {{contact.first_name}}, Adjusting Experts y Roofing en Español te invitan a Claim to Close: Georgia. Sábado 26 de sep, 10:00 AM, Norcross. Gratis, cupos limitados. Reservá: claimtoclose.com — Respondé STOP para no recibir más mensajes.
 ```
 
 ---
@@ -140,20 +148,20 @@ Primer SMS de la cuenta debe incluir opt-out una vez (obligatorio A2P). Versión
 
 **SMS confirmación (inmediato):**
 ```
-Listo {{contact.first_name}}! Tu lugar en Claim to Close esta reservado. Sab 26 sep 10AM, Norcross. Chat privado: chat.whatsapp.com/GAdVaCzlGxv2zHhtBIMqgd
+¡Listo, {{contact.first_name}}! Tu lugar en Claim to Close: Georgia está reservado. Sábado 26 de septiembre, 10:00 AM, BRS Roofing Supply, Norcross. Entrá al chat privado del evento: chat.whatsapp.com/GAdVaCzlGxv2zHhtBIMqgd
 ```
 
 **SMS 1 semana antes:**
 ```
-{{contact.first_name}}, en 1 semana nos vemos en Claim to Close. Sab 26 sep 10AM, 2830 Simpson Cir NW, Norcross. Trae tu caso para el Q&A. Info: claimtoclose.com
+{{contact.first_name}}, en una semana nos vemos en Claim to Close: Georgia. Sábado 26, 10:00 AM, en 2830 Simpson Cir NW, Norcross. Traé tu caso para el Q&A. Toda la info en claimtoclose.com
 ```
 
 **SMS 1 día antes:**
 ```
-Manana es el dia, {{contact.first_name}}! Claim to Close 10AM, BRS Roofing Supply, 2830 Simpson Cir NW, Norcross GA. Estacionamiento en el lugar. Nos vemos!
+{{contact.first_name}}, ¡mañana es el día! Claim to Close: Georgia, 10:00 AM en BRS Roofing Supply, 2830 Simpson Cir NW, Norcross. Hay estacionamiento en el lugar. ¡Nos vemos!
 ```
 
 **SMS día del evento (7:30 AM):**
 ```
-Hoy! Claim to Close arranca 10AM en BRS Roofing Supply, 2830 Simpson Cir NW, Norcross. Si trabajas temprano, ven igual, seguimos toda la manana. Nos vemos!
+¡Hoy es el día! Claim to Close: Georgia arranca a las 10:00 AM en BRS Roofing Supply, 2830 Simpson Cir NW, Norcross. Si trabajás temprano, vení igual: seguimos toda la mañana. ¡Nos vemos!
 ```
