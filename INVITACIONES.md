@@ -1,3 +1,5 @@
+> **OBSOLETO desde 2026-10-01.** Esta secuencia era para el evento presencial del 26 de septiembre. La campaña vigente es la del webinar gratuito (jueves 8 de octubre, 12–2 PM ET): usar el PDF `Claim_to_Close_SMS_Email_Campaign_Oct8_FINAL_LINKS.pdf` en GHL. Imagen para los emails del webinar: https://claimtoclose.com/assets/webinar.jpg
+
 # Claim to Close: Georgia — Secuencia de invitación (Email + SMS)
 
 Uso en GHL: campos de merge `{{contact.first_name}}`. Link siempre: https://claimtoclose.com
